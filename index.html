@@ -4,19 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <style>
+        .white-text, .white-text * {
+            color: white;
+        }
+    </style>
+    <!-- left container -->
     <div class="c1">
-        <div class="logo-container">
-            <img src="./images/odin.png" alt="Odin Logo">
-            <p>ODIN</p>
+
+        <div class="top">
+            <div class="logo-container">
+                <img width="100px" height="100px" src="./images/odin.png" alt="Odin Logo">
+                <p style="color: white">ODIN</p>
+            </div>
+        </div>
+        <!-- C1 Footer content -->
+        <div class="footer">
+            <p class="white-text">Photo by
+                <a href="https://unsplash.com/@t_t">Studio Dekorasyon</a>
+                on
+                <a href="https://unsplash.com/">Unsplash</a>
+            </p>
         </div>
     </div>
-    <!-- C1 Footer content -->
-    <p>Photo by 
-        <a href="https://unsplash.com/@t_t">Studio Dekorasyon</a>
-         on 
-        <a href="https://unsplash.com/">Unsplash</a>
-    </p>
+
+    <!-- right container -->
+     <form action="" method="post">
+        <div>
+            <p>This is not a real online service!</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div>
+            <h1>Let's do this!</h1>
+            <div class="form-container">  
+                <div>
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div>
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div>
+                    
+                    <label for="email">EMAIL</label>
+                    <input type="text" name="email" id="email">
+                    
+                </div>
+                <div>
+                    
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="text" name="phone-number" id="phone-number">
+                    
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="text" name="password" id="password">
+                </div>
+                
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="text" id="confirm-password">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </form> 
+
 </body>
 </html>
